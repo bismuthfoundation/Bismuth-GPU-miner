@@ -83,3 +83,5 @@ class Get:
                 self.banlist = line.lstrip('banlist=').split(",")
             if "nodes_ban_reset=" in line:
                 self.nodes_ban_reset = int(line.lstrip('nodes_ban_reset='))
+            if "whitelist" in line:
+                self.whitelist = line.lstrip('whitelist=')
